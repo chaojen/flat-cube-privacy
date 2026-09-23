@@ -3,7 +3,7 @@
 **Applies to: Flat Cube: Unfolded Puzzle ("Flat Cube")**
 
 **Effective date: September 23, 2026**
-**Last updated: September 23, 2026**
+**Last updated: September 24, 2026**
 
 ChaoJen ("we," "us," or "our") respects and protects your privacy. This Privacy Policy explains what data the Flat Cube mobile application (the "App") collects, how it is used and shared, and the choices you have.
 
@@ -43,9 +43,21 @@ Analytics events are associated with your anonymous UID.
 ### 1.5 Crash and Diagnostic Data
 We use Firebase Crashlytics to receive crash reports and error diagnostics, which may include the stack trace, device model, operating system version, app version, and an installation identifier. Crash reports are associated with your anonymous UID so that we can investigate problems you report.
 
-### 1.6 What We Do Not Collect
+### 1.6 Advertising
+The App shows ads through Google AdMob: a banner at the bottom of the main screen, and a full-screen ad after you complete a timed solve. To serve and measure ads, AdMob may collect:
+- The advertising identifier (IDFA on iOS or the Advertising ID on Android)
+- Device model, operating system version, language, IP address, and approximate location derived from it
+- Ad interactions, such as impressions and clicks
+
+**On iOS**, the App asks for permission through Apple's App Tracking Transparency prompt before the IDFA can be used. If you decline, AdMob cannot access the IDFA and serves ads without tracking you across other companies' apps and websites.
+
+**In the European Economic Area, the United Kingdom, and Switzerland**, the App asks for your consent through Google's consent message before showing ads. You can consent, decline, or choose specific purposes, and you can change your choice at any time under **Settings → Ad privacy options**.
+
+You can also reset or limit the advertising identifier in your device's settings.
+
+### 1.7 What We Do Not Collect
 - We do **not** access your contacts, photos, camera, microphone, or precise location.
-- We do **not** show ads, and we do **not** collect the advertising identifier (IDFA on iOS or the Advertising ID on Android). We do not track you across other companies' apps or websites.
+- Firebase Analytics does **not** collect the advertising identifier; only AdMob uses it, as described in Section 1.6.
 - The App has no in-app purchases, so we do not handle payment information.
 
 ---
@@ -58,8 +70,9 @@ We use the information we collect to:
 - Understand how the App is used so that we can improve it
 - Diagnose crashes and fix bugs
 - Prevent abuse and protect our backend through Firebase App Check
+- Show ads through Google AdMob, which funds the App
 
-We do **not** sell your personal data, and we do not use it for advertising.
+We do **not** sell your personal data. Apart from the advertising data that AdMob collects as described in Section 1.6, we do not use your data for advertising.
 
 ---
 
@@ -85,6 +98,7 @@ The App uses the following Google services, which process data on our behalf. We
 | Google Analytics for Firebase | Usage analytics | https://firebase.google.com/support/privacy |
 | Firebase Crashlytics | Crash reporting | https://firebase.google.com/support/privacy |
 | Firebase App Check | Protecting the backend from abuse | https://firebase.google.com/support/privacy |
+| Google AdMob | Showing ads | https://policies.google.com/technologies/ads |
 
 We do not share your data with any other third party, except as required by law (see Section 5).
 
@@ -117,6 +131,7 @@ Data sent between the App and our servers is encrypted in transit (HTTPS). Acces
 
 - **Nickname**: You can change your nickname at any time in Settings.
 - **Deletion**: The App does not currently offer in-app account deletion. To have your nickname, solve records, and leaderboard entries deleted, email us at the address below. Because your account is anonymous, please include your nickname and the approximate time of a recent ranked solve so that we can identify your account. We will delete the data within 30 days.
+- **Ads**: You can change your ad consent under Settings → Ad privacy options (where required by law), turn off tracking permission for the App in iOS Settings, or reset the advertising identifier in your device settings.
 - **Stopping collection**: You can stop all data collection at any time by uninstalling the App.
 
 ---
