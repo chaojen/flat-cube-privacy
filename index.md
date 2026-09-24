@@ -3,7 +3,7 @@
 **Applies to: Flat Cube: Unfolded Puzzle ("Flat Cube")**
 
 **Effective date: September 23, 2026**
-**Last updated: September 24, 2026**
+**Last updated: September 25, 2026**
 
 ChaoJen ("we," "us," or "our") respects and protects your privacy. This Privacy Policy explains what data the Flat Cube mobile application (the "App") collects, how it is used and shared, and the choices you have.
 
@@ -13,10 +13,16 @@ By downloading or using the App, you acknowledge that you have read this Policy.
 
 ## 1. Information We Collect
 
-### 1.1 Anonymous Account
-The App does not ask you to register or sign in. When you open it, Firebase Authentication creates an **anonymous account** for you in the background. We receive only a randomly generated unique user identifier (UID). We do not collect your name, email address, or phone number.
+### 1.1 Account
+The App does not require you to register or sign in. When you open it, Firebase Authentication creates an **anonymous (guest) account** for you in the background. For a guest account we receive only a randomly generated unique user identifier (UID), and we do not collect your name, email address, or phone number.
 
-The UID is what lets the leaderboard know which results are yours. It is tied to this installation of the App: if you uninstall the App or clear its data, a new anonymous account is created the next time you open it, and your previous results can no longer be linked back to you from the App.
+The UID is what lets the leaderboard know which results are yours. A guest account is tied to this installation of the App: if you uninstall the App or clear its data, a new guest account is created the next time you open it, and your previous results can no longer be linked back to you from the App.
+
+**Optional sign-in with Apple or Google.** If you choose to, you can sign in with Apple or Google in Settings so that you can keep your results when you change devices or reinstall the App. Your existing UID, results, and nickname stay the same. When you do, Firebase Authentication receives from Apple or Google:
+- An account identifier issued by that provider
+- Your email address. With Sign in with Apple you can choose to hide your email, in which case we receive a private relay address from Apple instead.
+
+We use this information only to let you sign back in to the same account. It is not shown to other players. We do not receive your Apple or Google password.
 
 ### 1.2 Leaderboard Nickname
 If you choose to, you can set a **nickname** (up to 20 characters) in Settings. It is shown next to your results on the leaderboard. Please do not use your real name or other personal information as your nickname.
@@ -59,6 +65,7 @@ You can also reset or limit the advertising identifier in your device's settings
 - We do **not** access your contacts, photos, camera, microphone, or precise location.
 - Firebase Analytics does **not** collect the advertising identifier; only AdMob uses it, as described in Section 1.6.
 - The App has no in-app purchases, so we do not handle payment information.
+- We do not receive your name from Apple or Google, and we do not access your contacts or other data in those accounts.
 
 ---
 
@@ -67,6 +74,7 @@ You can also reset or limit the advertising identifier in your device's settings
 We use the information we collect to:
 - Issue scrambles, time your solves, verify results, and publish the leaderboard
 - Show your nickname and results on the daily and all-time leaderboards
+- Let you sign back in to the same account with Apple or Google, if you choose to
 - Understand how the App is used so that we can improve it
 - Diagnose crashes and fix bugs
 - Prevent abuse and protect our backend through Firebase App Check
@@ -83,7 +91,7 @@ The leaderboard is visible to everyone who uses the App. For each entry it shows
 - Your best time and its move count
 - When that result was achieved
 
-The moves of your solves, your analytics data, and your crash reports are **not** shown to other players.
+The moves of your solves, your email address, your analytics data, and your crash reports are **not** shown to other players.
 
 ---
 
@@ -93,7 +101,9 @@ The App uses the following Google services, which process data on our behalf. We
 
 | Service | Purpose | Privacy Policy |
 | --- | --- | --- |
-| Firebase Authentication | Anonymous accounts | https://firebase.google.com/support/privacy |
+| Firebase Authentication | Guest accounts and optional sign-in with Apple or Google | https://firebase.google.com/support/privacy |
+| Sign in with Apple | Optional sign-in | https://www.apple.com/legal/privacy/ |
+| Google Sign-In | Optional sign-in | https://policies.google.com/privacy |
 | Cloud Firestore and Cloud Functions for Firebase | Storing and verifying solves, nicknames, and the leaderboard | https://firebase.google.com/support/privacy |
 | Google Analytics for Firebase | Usage analytics | https://firebase.google.com/support/privacy |
 | Firebase Crashlytics | Crash reporting | https://firebase.google.com/support/privacy |
@@ -116,7 +126,7 @@ We share your data only:
 ## 6. Data Storage and Retention
 
 - Your data is stored on Google Cloud servers located in the United States.
-- Solve records, your player profile, and leaderboard entries are kept for as long as the leaderboard is operated, unless you ask us to delete them (see Section 8).
+- Solve records, your player profile, leaderboard entries, and your account are kept for as long as the leaderboard is operated, unless you delete your account (see Section 8).
 - Analytics and crash data are kept according to Firebase's retention settings, currently up to 14 months for Analytics and up to 90 days for Crashlytics.
 
 ---
@@ -130,7 +140,8 @@ Data sent between the App and our servers is encrypted in transit (HTTPS). Acces
 ## 8. Your Choices and Rights
 
 - **Nickname**: You can change your nickname at any time in Settings.
-- **Deletion**: The App does not currently offer in-app account deletion. To have your nickname, solve records, and leaderboard entries deleted, email us at the address below. Because your account is anonymous, please include your nickname and the approximate time of a recent ranked solve so that we can identify your account. We will delete the data within 30 days.
+- **Sign out**: If you signed in with Apple or Google, you can sign out in Settings. The App then continues with a new guest account, and you can sign back in later to get your results back.
+- **Account deletion**: You can delete your account at any time under **Settings → Delete account**. This immediately and permanently deletes your account, nickname, solve records, and all of your daily and all-time leaderboard entries, and the App continues with a new guest account. On iOS, if you signed in with Apple, the App also revokes its Sign in with Apple authorization. Analytics and crash data are not linked to a name or email and expire according to Section 6. If you can no longer open the App, you can also email us at the address below to request deletion; we will delete the data within 30 days.
 - **Ads**: You can change your ad consent under Settings → Ad privacy options (where required by law), turn off tracking permission for the App in iOS Settings, or reset the advertising identifier in your device settings.
 - **Stopping collection**: You can stop all data collection at any time by uninstalling the App.
 
@@ -138,7 +149,7 @@ Data sent between the App and our servers is encrypted in transit (HTTPS). Acces
 
 ## 9. Children's Privacy
 
-The App is not directed at children under the age of 13 (or the minimum age required by the laws of your region), and we do not knowingly collect personal data from children. The App does not ask for any personal information. If you believe a child has entered personal information, for example as a nickname, please contact us and we will delete it.
+The App is not directed at children under the age of 13 (or the minimum age required by the laws of your region), and we do not knowingly collect personal data from children. The App does not require any personal information; signing in with Apple or Google is optional. If you believe a child has entered personal information, for example as a nickname, please contact us and we will delete it.
 
 ---
 
