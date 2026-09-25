@@ -31,7 +31,7 @@ If you choose to, you can set a **nickname** (up to 20 characters) in Settings. 
 When you start a timed, ranked solve, the App sends the following to our servers so that the result can be verified and ranked:
 - The scramble you were given and the moves you made
 - When the solve was issued, started, and submitted, and the elapsed time
-- The move count, and whether the result is a personal or daily best
+- The move count, and whether the result is a new personal or leaderboard best
 
 We also keep a summary on your player profile: your best time, the number of solves you have submitted, and when you last submitted one.
 
@@ -39,7 +39,7 @@ Practice solves (when a ranked scramble is unavailable) and free play are **not*
 
 ### 1.4 Usage Analytics
 We use Firebase Analytics to understand how the App is used, for example:
-- Screens you visit (the cube, the leaderboard, settings)
+- Screens you visit (the home screen, the cube, the leaderboard, settings)
 - When a timed solve is started, completed, or abandoned, with its move count, elapsed time, and whether it was ranked
 - Which control mode you use
 - Device model, operating system version, language, approximate region (estimated from IP address), and an app-instance identifier
@@ -73,7 +73,7 @@ You can also reset or limit the advertising identifier in your device's settings
 
 We use the information we collect to:
 - Issue scrambles, time your solves, verify results, and publish the leaderboard
-- Show your nickname and results on the daily and all-time leaderboards
+- Show your nickname and results on the leaderboards (the 30-day leaderboard; earlier versions of the App show daily and all-time leaderboards), and show you your own records
 - Let you sign back in to the same account with Apple or Google, if you choose to
 - Understand how the App is used so that we can improve it
 - Diagnose crashes and fix bugs
@@ -141,7 +141,7 @@ Data sent between the App and our servers is encrypted in transit (HTTPS). Acces
 
 - **Nickname**: You can change your nickname at any time in Settings.
 - **Sign out**: If you signed in with Apple or Google, you can sign out in Settings. The App then continues with a new guest account, and you can sign back in later to get your results back.
-- **Account deletion**: You can delete your account at any time under **Settings → Delete account**. This immediately and permanently deletes your account, nickname, solve records, and all of your daily and all-time leaderboard entries, and the App continues with a new guest account. On iOS, if you signed in with Apple, the App also revokes its Sign in with Apple authorization. Analytics and crash data are not linked to a name or email and expire according to Section 6. If you can no longer open the App, you can also email us at the address below to request deletion; we will delete the data within 30 days.
+- **Account deletion**: You can delete your account at any time under **Settings → Delete account**. This immediately and permanently deletes your account, nickname, solve records, and all of your leaderboard entries (30-day, daily and all-time), and the App continues with a new guest account. On iOS, if you signed in with Apple, the App also revokes its Sign in with Apple authorization. Analytics and crash data are not linked to a name or email and expire according to Section 6. If you can no longer open the App, you can also email us at the address below to request deletion; we will delete the data within 30 days.
 - **Ads**: You can change your ad consent under Settings → Ad privacy options (where required by law), turn off tracking permission for the App in iOS Settings, or reset the advertising identifier in your device settings.
 - **Stopping collection**: You can stop all data collection at any time by uninstalling the App.
 
